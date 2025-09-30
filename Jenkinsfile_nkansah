@@ -6,8 +6,7 @@ pipeline {
         jdk 'jdk17'         // Use Java 17 to avoid compatibility issues
     }
     
-    stages {
-              
+    stages {              
         stage('Compile') {
             steps {
                 sh 'mvn clean compile'
